@@ -1,7 +1,7 @@
 <h1><a name="header-n286" class="md-header-anchor md-print-anchor" href="af://n286"> </a><span>정규식(Regexp) 개념 및 Introduction 문제 풀이</span></h1>
 <p><span>그동안, 정규식을 어렴풋이 사용하다가 업무를 하면서 많이 사용하게 되어 본격적으로 공부해야 겠다고 마음을 먹었다. 그래서 오늘 부터 @Hackerrank에서 정규식 문제도 같이 풀어보기로 했다. 참고로 정규식문제를 풀 경우 언어는 </span><code>Java8</code><span> 을 사용 하였다.</span></p>
 <h3><a name="header-n288" class="md-header-anchor md-print-anchor" href="af://n288"> </a><span>☀️ 정규식 이란 무엇일까?</span></h3>
-<p><span>String값에서 특정한 규직을 가진 문자나 숫자의 조합과 대응시키기 위해 사용되는 패턴이다.</span></p>
+<p><span>String값에서 특정한 규칙을 가진 문자나 숫자의 조합과 대응시키기 위해 사용되는 패턴이다.</span></p>
 <p>&nbsp;</p>
 <h3><a name="header-n291" class="md-header-anchor md-print-anchor" href="af://n291"> </a><span>✍️ 정규식 Introduction 문제 풀이</span></h3>
 <h5><a name="header-n292" class="md-header-anchor md-print-anchor" href="af://n292"> </a><span>1. 구체적인 문자열 일치시키기</span></h5>
