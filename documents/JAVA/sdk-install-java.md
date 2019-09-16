@@ -4,17 +4,26 @@
 
 Sdkman 이란 대부분 Unix 를 기반으로 한 시스템 내의 여러가지 Software Development Kits(SDK)의 버전들을 관리할 수 있도록 도와주는 도구이다. sdkman은 candidate(즉, 설치하고 싶은 SDK)들을 설치,제거, 변경, 목록 들을 쉽게 확인 할 수 있도록 편리한 CLI(Command Line Interface)를 제공해준다. 
 
-> sdkman 으로 설치할 수 있는 SDK목록 확인하는 방법
+### 2. SDKMAN 설치 방법
 
+```linux
+curl -s "https://get.sdkman.io" | bash
+```
+다음과 같이 sdkman 파일을 설치 후 path를 설정해 준다.
+```linux
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+```
+이 후, version 확인명령어를 통해 설치된 sdkman version을 확인 해보자
+```linux
+sdk version
+```
+
+sdkman 버전을 확인한 후 다음과 같이 입력하면 설치할 수 있는 sdk 리스트들을 확인 할 수 있다.
 ```linux 
 sdk list
 ```
 
-다음과 같이 입력하면 설치할 수 있는 sdk 리스트들을 확인 할 수 있다.
-
-
-
-### 2. SDKMAN으로 Java 설치하는 방법
+### 3. SDKMAN으로 Java 설치하는 방법
 
 > 1) 우선 java 의 버전 리스트들을 확인해보자
 
@@ -29,6 +38,7 @@ sdk list java
 > 2) java 설치
 
 그중 설치하고 싶은 버전의 Identifier를 확인한 후 다음과 같은 명령어를 입력한다.
+(최신 버전을 설치하고 싶다면 Identifier없이 명령어를 입력 하면 된다.)
 
 ```linux 
 sdk install java 12.0.1.j9-adpt
