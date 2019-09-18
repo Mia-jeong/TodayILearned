@@ -14,7 +14,10 @@ Spring Boot와 IntelliJ를 사용한다고 가정하여 사용방법을 작성�
 
 ```xml 
 dependencies {
-    compile('org.projectlombok:lombok')
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+    testCompileOnly 'org.projectlombok:lombok:1.18.8'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.8'
 }
 ```
 
