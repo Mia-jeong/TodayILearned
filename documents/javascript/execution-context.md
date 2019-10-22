@@ -36,20 +36,19 @@ sayMyName();
 
 ### 2. Lexical Enviroment 
 
-`Lexical Enviromet`란 작성하고 있는 코드가 어느 `Execution Context`에 속하는지를 의미한다.
+현재 작성하고 있는 코드(함수)가 어디에 작성되어 있는지를 의미한다.
 
 ```js 
 function a(){
+        var word1 = 0;
 	function b(){
-		console.log('I belong to a');
+        var word2 = 1;
 	}
-	console.log('I belong to Global');
 }
 ```
-
-위의 함수중 `a` 는 `global execution context` 에 속하고 `b`는 `a execution context`에 속하게 된다.
-
+word 는 lexically 하게 a 함수에 속해 있고 word2는 b에 속해 있다.
 어떤 `Lexical Enviroment`에 속하는지에 따라 접근할 수 있는 코드가 다르다.
+
 
 
 
@@ -178,4 +177,10 @@ var sayMyName = function(){
 	return 'hello'; 
 }
 ```
+
+(참고 ) Context vs Scope
+
+- Context : how function is invoked with this key word.
+- Scope: variable visibility.
+
 
