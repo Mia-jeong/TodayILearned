@@ -84,7 +84,7 @@ const obj = {
   }
 }
 
-obj.sing();
+obj.barking();
 ```
 
 위와 같이 함수를 작성하고 실행 시키면 다음과 같은 결과가 나올 것이다.
@@ -108,7 +108,7 @@ const obj = {
   }
 }
 
-obj.sing();
+obj.barking();
 ```
 
 위와 같이 `arrow function` 으로 바꾸면 lexically binding을 하기 때문에 둘다 this === obj 로 설정 된다.
@@ -128,7 +128,7 @@ const obj = {
   }
 }
 
-obj.sing();
+obj.barking();
 ```
 
 위와 같이 self를 생성하여 this를 대입시키면 func내에서도 self를 통해 this == obj를 접근 할 수 있다.
