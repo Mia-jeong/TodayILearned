@@ -112,6 +112,26 @@ obj.barking();
 ```
 
 위와 같이 `arrow function` 으로 바꾸면 lexically binding을 하기 때문에 둘다 this === obj 로 설정 된다.
+(참고)
+`arrow function`은 `scope`을 생성하지 않는다, 따라서 this를 바인딩 하지 않음.
+
+```js 
+const obj = {
+  name : 'bam',
+  self: this, // window
+  barking: () => {
+    console.log(this) //window  
+  },
+  barking2() {
+    var func = () => {
+      console.log('b', this); //obj barking2()의 scope에대한 this가 obj이기 때문에 arrow function은 새로 scope을 생성하지 않아 this를 바인딩하지 않으므로 barking2의 this를 따라간다.
+    }
+    func();   
+  }    
+}
+
+obj.barking();
+```
 
 ### 2. self 사용법
 
