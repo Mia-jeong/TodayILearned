@@ -312,3 +312,58 @@ var d = {
 }
 ```
 
+###6. 4 ways of this
+
+**new binding**
+```js 
+function Person(name, age){
+    this.name = name;
+    this.age = age;
+}
+
+const person1 = new Person('bam', 3);
+```
+
+**implicit binding**
+```js 
+const person = {
+    name : 'bam',
+    age: 3,
+    hi() {
+        console.log('hi ' + this.name);
+    }    
+}
+
+person.hi();
+```
+
+**explicit binding**
+```js 
+const person = {
+    name : 'bam',
+    age: 3,
+    hi: function () {
+        console.log(this.setTimeout)
+    }.bind(window)
+}
+
+person.hi();
+```
+
+**arrow function**
+```js 
+const person = {
+    name : 'bam',
+    age: 3,
+    hi: function () {
+        var inner = () => {
+            console.log('hi', this.name)
+        }
+        return inner()
+    }
+}
+
+person.hi();
+```
+
+만약 `inner function` 이 `regular function` 이었다면 this 는 `window`를 나타냈을 것이다.
