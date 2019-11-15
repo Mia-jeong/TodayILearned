@@ -46,7 +46,7 @@
 }
 </code></pre>
 <ol start='2' >
-<li><span>Testcode 작성 - RED</span></li>
+<li><span>Testcode 작성 - RED <br> 참고로 1번 Restaurant domain에 오른쪽 마우스 클릭 후 `Go to` 메뉴에서 `Test`를 클릭하면 테스트를 자동으로 생성 할수 있다.</span></li>
 
 </ol>
 <pre><code class='language-java' lang='java'>public class RestaurantTests {
